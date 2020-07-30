@@ -1,2 +1,2 @@
-# IC_Library
+# IC Library
 C library for integrated circuit
