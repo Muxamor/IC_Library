@@ -1,4 +1,3 @@
-
 #include "stm32l4xx.h"
 #include "i2c_comm.h"
 #include "TMP1075.h"
@@ -78,7 +77,7 @@ float TMP1075_raw_to_float(uint16_t ADC_CODE){
 
 	ADC_data_int = ADC_data_int>>4;
 
-	ret_val = (float)( ( (float)ADC_data_int ) * 0.0625 );
+	ret_val = (float)( ( (float)ADC_data_int ) * 0.0625f );
 
 	return ret_val;
 }
